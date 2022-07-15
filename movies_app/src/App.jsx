@@ -1,4 +1,4 @@
-import {Container} from '@mui/material';
+import {Container, Pagination} from '@mui/material';
 import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
@@ -7,6 +7,7 @@ import Trending from '../src/Pages/Trending/Trending';
 import Movies from './Pages/Movies/Movies';
 import Series from './Pages/Series/Series';
 import Search from './Pages/Search/Search';
+
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/search" element={<Search />}></Route>
           </Routes>
         </Container>
+       
       </div>
       <SimpleBottomNavigation />
     </BrowserRouter>
