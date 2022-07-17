@@ -47,11 +47,14 @@ You can also take a glimpse of our Project, just follow the below steps:
    ![FoodXprs](/Images/Trending.png)
 
 2.Movies Page
- ![FoodXprs]((/Images/Movies.png)
+
+     ![FoodXprs](/Images/Movies.png)
 3. TV Series Page
-![FoodXprs]((/Images/Tvseries.png)
+
+     ![FoodXprs](/Images/Tvseries.png)
 4. Detailed Info Page
- ![FoodXprs]((/Images/detailed.png)
+
+      ![FoodXprs](/Images/detailed.png)
 <br>
 
 ## Features ✨
