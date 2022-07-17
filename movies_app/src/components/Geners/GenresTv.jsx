@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import axios from 'axios';
 import {Chip} from '@mui/material';
 const REACT_APP_API_KEY = '5b9c151b195617ae748ad318345d8cee';
-const Genres = ({
+const GenresTv = ({
   selectedGenres,
   setSelectedGenres,
   genres,
@@ -28,8 +28,8 @@ const Genres = ({
     const {data} = await axios.get(
       `https://api.themoviedb.org/3/genre/${type}/list?api_key=${REACT_APP_API_KEY}&language=en-US`
     );
-  
-   console.log(data.genres)
+    // const res=JSON.stringify(data)
+    console.log(data.genres);
     setGenres(data.genres);
   };
 
@@ -39,13 +39,12 @@ const Genres = ({
     return () => {
       setGenres({}); // unmounting
     };
-  }, [genres]);
+  }, []);
 
   return (
     <div style={{padding: '6px 0'}}>
       {selectedGenres &&
         selectedGenres.map((e) => (
-          
           <Chip
             label={e.name}
             style={{margin: 2}}
@@ -69,4 +68,4 @@ const Genres = ({
   );
 };
 
-export default Genres;
+export default GenresTv;

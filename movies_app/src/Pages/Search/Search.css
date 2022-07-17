@@ -1,0 +1,14 @@
+	.MuiTextField-root{
+       color: white;
+        background-color: teal;
+    }
+    .series{
+        display: flex;
+        margin: 15px 0;
+        justify-content: center;
+    }
+    .trending {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
